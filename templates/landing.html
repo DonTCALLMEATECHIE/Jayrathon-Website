@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Welcome | Jayrathon Technologies{% endblock %}
+{% block content %}
+<section class="welcome">
+  <h2>Welcome!</h2>
+  <p>Discover free courses, resources, and a community for aspiring data scientists. Start your tech journey below.</p>
+  <div class="cta-buttons">
+    <a href="{{ url_for('signin') }}" class="btn">Sign In</a>
+    <a href="{{ url_for('signup') }}" class="btn btn-alt">Sign Up</a>
+  </div>
+</section>
+<section class="features">
+  <div class="feature-card">
+    <h3><i class="fas fa-graduation-cap"></i> Free Curriculum</h3>
+    <p>Get step-by-step guides and resources curated for beginners.</p>
+  </div>
+  <div class="feature-card">
+    <h3><i class="fas fa-wrench"></i> Tools & Practice</h3>
+    <p>Access hands-on coding labs and visualization notebooks.</p>
+  </div>
+  <div class="feature-card">
+    <h3><i class="fas fa-users"></i> Community Support</h3>
+    <p>Join our community and get support from peers and mentors.</p>
+  </div>
+</section>
+{% endblock %}

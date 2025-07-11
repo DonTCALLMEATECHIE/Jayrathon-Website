@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jayrathon Technologies – Data Science Curriculum</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header>
+    <img src="{{ url_for('static', filename='logo.svg') }}" alt="Jayrathon Technologies Logo" class="site-logo" />
+    <h1>Jayrathon Technologies</h1>
+    <p>Your Launchpad to Data Science</p>
+    {% if username %}
+      <p class="welcome-user">Welcome, {{ username }} | <a href="{{ url_for('signout') }}">Sign Out</a></p>
+    {% endif %}
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#references">References</a></li>
+      <li><a href="#resources">More Resources</a></li>
+      <li><a href="#communities">Communities</a></li>
+      <li><a href="#youtube">YouTube Channels</a></li>
+      <li><a href="#practice">Practice Platforms</a></li>
+      <li><a href="#blogs">Blogs & News</a></li>
+    </ul>
+  </nav>
+
+  <section id="intro">
+    <h2>Welcome to Jayrathon Technologies</h2>
+    <p>This site provides a curated collection of resources to help beginners launch their journey into data science and tech. You'll find free, hands-on courses in key areas like data science, coding, and artificial intelligence. The repository is designed with an easy-to-follow curriculum guide to help you confidently begin your IT career.</p>
+  </section>
+
+  <section id="courses" class="collapsible">
+    <h2>📘 Introductory Courses</h2>
+    <ul>
+      <li><a href="https://www.datacamp.com/courses-all" target="_blank">DataCamp – Learn Python, R, SQL</a></li>
+      <li><a href="https://www.simplilearn.com/data-science-free-course-for-beginners-skillup" target="_blank">Simplilearn – Free Data Science Course with Certificate</a></li>
+      <li><a href="https://www.coursera.org/specializations/data-science-foundations-r" target="_blank">Coursera – Data Science Foundations (R)</a></li>
+      <li><a href="https://www.edx.org/learn/data-science" target="_blank">edX – Data Science Courses</a></li>
+      <li><a href="https://www.udemy.com/topic/data-science/free/" target="_blank">Udemy – Free Data Science Courses</a></li>
+      <li><a href="https://www.kaggle.com/learn/overview" target="_blank">Kaggle Learn – Micro-courses</a></li>
+      <li><a href="https://www.codecademy.com/learn/paths/data-science" target="_blank">Codecademy – Data Science Path</a></li>
+    </ul>
+  </section>
+
+  <section id="tools" class="collapsible">
+    <h2>🛠 Special Topics & Tools</h2>
+    <ul>
+      <li><a href="https://github.com/fonnesbeck/statistical-analysis-python-tutorial/blob/master/3.%20Plotting%20and%20Visualization.ipynb" target="_blank">Jupyter Visualization Notebook</a></li>
+      <li><a href="https://colab.research.google.com/" target="_blank">Google Colab – Free Jupyter Notebooks</a></li>
+      <li><a href="https://www.anaconda.com/products/distribution" target="_blank">Anaconda – Python Distribution</a></li>
+      <li><a href="https://scikit-learn.org/stable/" target="_blank">scikit-learn – Machine Learning in Python</a></li>
+      <li><a href="https://pandas.pydata.org/" target="_blank">pandas – Data Analysis Library</a></li>
+      <li><a href="https://numpy.org/" target="_blank">NumPy – Numerical Python</a></li>
+      <li><a href="https://matplotlib.org/" target="_blank">Matplotlib – Plotting Library</a></li>
+    </ul>
+  </section>
+
+  <section id="references" class="collapsible">
+    <h2>📚 Reference Books & PDFs</h2>
+    <ul>
+      <li><a href="https://ads.harvard.edu/books/1990fnmd.book/chapt1.pdf" target="_blank">Numerical Methods – Harvard ADS</a></li>
+      <li><a href="https://www.gnu.org/software/gsl/doc/latex/gsl-ref.pdf" target="_blank">GSL Statistics Reference</a></li>
+      <li><a href="https://www.cs.cornell.edu/jeh/book.pdf" target="_blank">Foundations of Data Science (PDF)</a></li>
+      <li><a href="https://d2l.ai/" target="_blank">Dive into Deep Learning – Free Book</a></li>
+      <li><a href="https://jakevdp.github.io/PythonDataScienceHandbook/" target="_blank">Python Data Science Handbook</a></li>
+      <li><a href="https://www.statlearning.com/" target="_blank">An Introduction to Statistical Learning (ISL)</a></li>
+    </ul>
+  </section>
+
+  <section id="resources">
+    <h2>📚 More Free Resources for Beginners</h2>
+    <ul>
+      <li><a href="https://elitedatascience.com/data-science-resources" target="_blank">EliteDataScience – 65 Free Data Science Resources</a></li>
+      <li><a href="https://codersguild.net/books/data-science" target="_blank">CodersGuild – Free PDF Books for Data Science</a></li>
+      <li><a href="https://www.dbooks.org/introduction-to-data-science-5592475697/" target="_blank">Introduction to Data Science by Rafael Irizarry (PDF)</a></li>
+      <li><a href="https://www.learndatasci.com/free-data-science-books/" target="_blank">LearnDataSci – 100+ Free Data Science Books</a></li>
+      <li><a href="https://archive.org/details/datasciencefordu0000pier" target="_blank">Data Science for Dummies – Internet Archive</a></li>
+    </ul>
+  </section>
+
+  <section id="communities">
+    <h2>🌐 Data Science Communities</h2>
+    <ul>
+      <li><a href="https://stackoverflow.com/questions/tagged/data-science" target="_blank">Stack Overflow – Data Science Tag</a></li>
+      <li><a href="https://www.kaggle.com/discussion" target="_blank">Kaggle Forums</a></li>
+      <li><a href="https://www.reddit.com/r/datascience/" target="_blank">Reddit r/datascience</a></li>
+      <li><a href="https://discord.com/invite/data-science" target="_blank">Discord Data Science Community</a></li>
+      <li><a href="https://www.linkedin.com/groups/8569474/" target="_blank">LinkedIn Data Science Central</a></li>
+    </ul>
+  </section>
+
+  <section id="youtube">
+    <h2>🎥 YouTube Channels</h2>
+    <ul>
+      <li><a href="https://www.youtube.com/c/StatQuest" target="_blank">StatQuest with Josh Starmer</a></li>
+      <li><a href="https://www.youtube.com/c/krishnaik06" target="_blank">Krish Naik</a></li>
+      <li><a href="https://www.youtube.com/c/CoreySchafer" target="_blank">Corey Schafer</a></li>
+      <li><a href="https://www.youtube.com/@freecodecamp" target="_blank">freeCodeCamp.org</a></li>
+      <li><a href="https://www.youtube.com/c/Sentdex" target="_blank">sentdex</a></li>
+      <li><a href="https://www.youtube.com/c/DataSchool" target="_blank">Data School</a></li>
+    </ul>
+  </section>
+
+  <section id="practice">
+    <h2>📝 Practice Platforms</h2>
+    <ul>
+      <li><a href="https://www.kaggle.com/" target="_blank">Kaggle – Data Science Competitions</a></li>
+      <li><a href="https://www.hackerrank.com/domains/tutorials/10-days-of-statistics" target="_blank">HackerRank – Statistics Challenges</a></li>
+      <li><a href="https://leetcode.com/" target="_blank">LeetCode – Coding Practice</a></li>
+      <li><a href="https://www.stratascratch.com/" target="_blank">StrataScratch – SQL & Python Interview Practice</a></li>
+    </ul>
+  </section>
+
+  <section id="blogs">
+    <h2>📰 Blogs & News</h2>
+    <ul>
+      <li><a href="https://towardsdatascience.com/" target="_blank">Towards Data Science</a></li>
+      <li><a href="https://rweekly.org/" target="_blank">R Weekly</a></li>
+      <li><a href="https://pythonweekly.com/" target="_blank">Python Weekly</a></li>
+      <li><a href="https://machinelearningmastery.com/blog/" target="_blank">Machine Learning Mastery</a></li>
+      <li><a href="https://distill.pub/" target="_blank">Distill – Interactive ML Explanations</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>powered by Jayrathon Technologies for beginner learners.</p>
+  </footer>
+</body>
+</html>
